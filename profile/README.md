@@ -123,3 +123,15 @@ ANVAYA OS is dual-licensed under [Apache 2.0](https://www.apache.org/licenses/LI
 [⭐ Star us on GitHub](https://github.com/AnvayaOS/anvaya) • [🐦 Follow updates](#) • [💬 Join discussions](https://github.com/AnvayaOS/anvaya/discussions)
 
 </div>
+
+## Citation
+
+```bibtex
+@misc{anvayaos,
+  title        = {ANVAYA OS: The Operating System for the Intelligence Age},
+  author       = {AnvayaOS},
+  year         = {2026},
+  howpublished = {\url{https://anvaya.dev}},
+  note         = {Accessed 2026-01-01}
+}
+```
