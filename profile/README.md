@@ -69,10 +69,14 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 | Repository | Description |
 |------------|-------------|
+| [**.github**](https://github.com/AnvayaOS/.github) | Organization profile and community health files |
 | [**anvaya**](https://github.com/AnvayaOS/anvaya) | 🎯 Main OS repository — kernel, services, runtime |
-| [**anvaya-sdk**](https://github.com/AnvayaOS/anvaya-sdk) | Developer SDK and capability libraries |
+| [**anvaya-site**](https://github.com/AnvayaOS/anvaya-site) | Anvaya.dev website — manifesto and updates |
 | [**anvaya-docs**](https://github.com/AnvayaOS/anvaya-docs) | Documentation and guides |
 | [**anvaya-apps**](https://github.com/AnvayaOS/anvaya-apps) | Example applications and demos |
+| [**anvaya-sdk**](https://github.com/AnvayaOS/anvaya-sdk) | Developer SDK and capability libraries |
+| [**anvaya-hardware**](https://github.com/AnvayaOS/anvaya-hardware) | Hardware specs and RISC-V extensions |
+| [**anvaya-infra**](https://github.com/AnvayaOS/anvaya-infra) | CI/CD, containers, and infrastructure automation |
 | [**rfcs**](https://github.com/AnvayaOS/rfcs) | Design proposals and specifications |
 
 ---
