@@ -31,6 +31,8 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ---
 
+> **Now:** Anvaya **0.3.0** (developer preview) is released — see [What Works Today](#-what-works-today). **0.4 "Production Substrate"** is the active milestone. The full 0.4 → 1.0 plan lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
+
 ## ✅ What Works Today
 
 ANVAYA is early — but it is **not vaporware**. The nucleus boots and runs real
