@@ -31,6 +31,49 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ---
 
+## ✅ What Works Today
+
+ANVAYA is early — but it is **not vaporware**. The nucleus boots and runs real
+code right now, and every claim below is re-asserted by **repeatable QEMU
+evidence** that CI checks on every push (160+ verified releases and counting):
+
+- 🥾 **Boots on RISC-V** in QEMU under OpenSBI (S-mode nucleus, first light)
+- 🔑 **Full RFC 0010 syscall surface** — capabilities, IPC, memory, scheduling, wait/cancel — proof-backed with denial paths
+- 🧩 **Real userspace processes** with per-process address spaces, a satp-keyed dispatch registry, and two live tasks exchanging capability-gated IPC
+- 📦 **Signed WASM/WASI apps run** — twelve capability-scoped catalog apps install and execute through a signed-package runner with deny-by-default authority
+- 🛠️ **External toolchain modules run** — WebAssembly compiled by real `rustc`/LLVM (not hand-written) parses and executes, including globals, memory, and inter-procedural calls
+- 💾 **Live drivers** — virtio-blk with two-boot persistence, virtio-net TX/RX, DNS, and TCP with hardware-timer retransmission
+- 🔢 **Bounded WASM interpreter** — all four numeric value types (i32/i64/f32/f64) with arithmetic, conversions, and memory load/store
+
+See the live **[status page](https://anvaya.dev/status)** and the
+[reproducible evidence guide](https://github.com/AnvayaOS/anvaya#getting-started-developer-preview).
+
+---
+
+## 🚀 Try It Yourself
+
+```bash
+# Prerequisites: Rust (stable) + the RISC-V target, and qemu-system-riscv64 (7.0+)
+rustup target add riscv64gc-unknown-none-elf
+
+git clone https://github.com/AnvayaOS/anvaya
+cd anvaya
+
+# Boot the nucleus in QEMU and assert every proof marker (clean exit == proof)
+./scripts/check-qemu-boot.sh
+
+# Run the full developer-preview demo: the twelve signed WASM apps end to end
+./scripts/demo-v0-3-apps.sh
+
+# Or just watch it boot interactively
+./scripts/run-qemu.sh
+```
+
+Each script exits non-zero if any expected marker is missing or the boot log
+contains a kernel panic — so a clean run *is* the evidence.
+
+---
+
 ## 🎯 Why ANVAYA?
 
 | Current Systems | ANVAYA |
@@ -83,13 +126,15 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ## 🗓️ Roadmap
 
-| Milestone | Target | Status |
-|-----------|--------|--------|
-| **Anvaya 0.1** — Nucleus boots on RISC-V | Dec 2026 | 🔄 In Progress |
-| **Anvaya 0.3** — WASM applications run | Dec 2027 | ⏳ Planned |
-| **Anvaya 0.5** — AI agents run natively | Dec 2028 | ⏳ Planned |
-| **Anvaya 0.8** — Multi-device mesh | Dec 2029 | ⏳ Planned |
-| **Anvaya 1.0** — Production release | Dec 2030 | ⏳ Planned |
+| Milestone | Scope | Status |
+|-----------|-------|--------|
+| **Anvaya 0.1** — Nucleus boots on RISC-V | First-light boot, capabilities, IPC, scheduling, memory isolation | ✅ Evidence-backed in QEMU |
+| **Anvaya 0.3** — WASM applications run | Signed WASM/WASI apps, services, drivers, external-toolchain modules | 🔄 In progress — core proof-backed, production gates remaining |
+| **Anvaya 0.5** — AI agents run natively | Agent Execution Contexts, Intelligence Broker | ⏳ Planned |
+| **Anvaya 0.8** — Multi-device mesh | Distributed capabilities across devices | ⏳ Planned |
+| **Anvaya 1.0** — Production release | Hardening, formal verification, post-quantum rollout | ⏳ Planned |
+
+*Progress is tracked release-by-release with reproducible QEMU evidence — see the [changelog](https://github.com/AnvayaOS/anvaya/blob/main/CHANGELOG.md) and the [live status page](https://anvaya.dev/status).*
 
 ---
 
