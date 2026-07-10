@@ -129,7 +129,7 @@ contains a kernel panic — so a clean run *is* the evidence.
 | Milestone | Scope | Status |
 |-----------|-------|--------|
 | **Anvaya 0.1** — Nucleus boots on RISC-V | First-light boot, capabilities, IPC, scheduling, memory isolation | ✅ Evidence-backed in QEMU |
-| **Anvaya 0.3** — WASM applications run | Signed WASM/WASI apps, services, drivers, external-toolchain modules | 🔄 In progress — core proof-backed, production gates remaining |
+| **Anvaya 0.3** — WASM applications run | Signed WASM/WASI apps, services, drivers, external-toolchain modules | ✅ **0.3.0 released** (developer preview) |
 | **Anvaya 0.5** — AI agents run natively | Agent Execution Contexts, Intelligence Broker | ⏳ Planned |
 | **Anvaya 0.8** — Multi-device mesh | Distributed capabilities across devices | ⏳ Planned |
 | **Anvaya 1.0** — Production release | Hardening, formal verification, post-quantum rollout | ⏳ Planned |
