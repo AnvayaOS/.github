@@ -31,7 +31,7 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ---
 
-> **Now:** Anvaya **0.3.0** (developer preview) is released — see [What Works Today](#-what-works-today). **0.4 "Production Substrate"** is the active milestone. The full 0.4 → 1.0 plan lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
+> **Now:** Anvaya **0.4.0** ("Production Substrate") is released — all six 0.4 completion gates (A–F) are closed; see [What Works Today](#-what-works-today). **0.5 "AI Agents Run Natively"** is the active milestone. The full 0.5 → 1.0 plan lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
 
 ## ✅ What Works Today
 
@@ -132,6 +132,7 @@ contains a kernel panic — so a clean run *is* the evidence.
 |-----------|-------|--------|
 | **Anvaya 0.1** — Nucleus boots on RISC-V | First-light boot, capabilities, IPC, scheduling, memory isolation | ✅ Evidence-backed in QEMU |
 | **Anvaya 0.3** — WASM applications run | Signed WASM/WASI apps, services, drivers, external-toolchain modules | ✅ **0.3.0 released** (developer preview) |
+| **Anvaya 0.4** — Production substrate | Production loader, live TCP/IP, SHA-256 persistence, audit service, Ed25519 signatures | ✅ **0.4.0 released** |
 | **Anvaya 0.5** — AI agents run natively | Agent Execution Contexts, Intelligence Broker | ⏳ Planned |
 | **Anvaya 0.8** — Multi-device mesh | Distributed capabilities across devices | ⏳ Planned |
 | **Anvaya 1.0** — Production release | Hardening, formal verification, post-quantum rollout | ⏳ Planned |
