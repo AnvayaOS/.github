@@ -31,7 +31,7 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ---
 
-> **Now:** Anvaya **0.4.0** ("Production Substrate") is released — all six 0.4 completion gates (A–F) are closed; see [What Works Today](#-what-works-today). **0.5 "AI Agents Run Natively"** is the active milestone. The full 0.5 → 1.0 plan lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
+> **Now:** Anvaya **1.0.0** ("Production Release") is released — the terminal milestone of the 0.x line, with all five 1.0 completion gates (A–E) closed: the accepted Nucleus invariants are formally verified (bounded-exhaustive proofs plus Kani harnesses, unsafe-Rust TCB 0.44% vs Asterinas 14%), post-quantum crypto (ML-KEM/ML-DSA/SLH-DSA, KAT-verified against the official NIST ACVP vectors) covers every trust surface with no classical-only path, and a device mesh, energy broker, interface layer, and PQC-signed package manager complete the stack. **Proven under QEMU — no physical hardware exists yet; a physical-hardware boot, an external third-party audit, and a hardware root of trust are documented open items.** The full milestone history lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
 
 ## ✅ What Works Today
 
@@ -133,9 +133,12 @@ contains a kernel panic — so a clean run *is* the evidence.
 | **Anvaya 0.1** — Nucleus boots on RISC-V | First-light boot, capabilities, IPC, scheduling, memory isolation | ✅ Evidence-backed in QEMU |
 | **Anvaya 0.3** — WASM applications run | Signed WASM/WASI apps, services, drivers, external-toolchain modules | ✅ **0.3.0 released** (developer preview) |
 | **Anvaya 0.4** — Production substrate | Production loader, live TCP/IP, SHA-256 persistence, audit service, Ed25519 signatures | ✅ **0.4.0 released** |
-| **Anvaya 0.5** — AI agents run natively | Agent Execution Contexts, Intelligence Broker | ⏳ Planned |
-| **Anvaya 0.8** — Multi-device mesh | Distributed capabilities across devices | ⏳ Planned |
-| **Anvaya 1.0** — Production release | Hardening, formal verification, post-quantum rollout | ⏳ Planned |
+| **Anvaya 0.5** — AI agents run natively | Agent Execution Contexts, Intelligence Broker, MCP/A2A | ✅ **0.5.0 released** |
+| **Anvaya 0.6** — Constitution & human override | Constitutional constraints, hardware escape, interpretability | ✅ **0.6.0 released** |
+| **Anvaya 0.7** — Post-quantum & hardware-anchored | ML-KEM/ML-DSA/SLH-DSA (NIST ACVP KAT), CHERI profile, measured boot | ✅ **0.7.0 released** |
+| **Anvaya 0.8** — Multi-device mesh | PQC pairing, cross-device capabilities, CRDT sync, distributed agents | ✅ **0.8.0 released** |
+| **Anvaya 0.9** — Usable & sustainable | Energy broker (SCI), intent router/CLI/compositor, PQC package manager | ✅ **0.9.0 released** |
+| **Anvaya 1.0** — Production release | Formal verification, internal audit, full PQC, benchmarks — QEMU-proven, no physical hardware | ✅ **1.0.0 released** |
 
 *Progress is tracked release-by-release with reproducible QEMU evidence — see the [changelog](https://github.com/AnvayaOS/anvaya/blob/main/CHANGELOG.md) and the [live status page](https://anvaya.dev/status).*
 
