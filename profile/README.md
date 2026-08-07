@@ -31,13 +31,13 @@ We are not patching UNIX. We are not forking Linux. We are building anew.
 
 ---
 
-> **Now:** Anvaya **1.0.0** ("QEMU-Proven Milestone") is released — the terminal, feature-complete milestone of the 0.x line, with all five 1.0 completion gates (A–E) closed to software scope (Gates B & D partial — external audit and physical A/B open): the accepted Nucleus invariants are formally verified (bounded-exhaustive proofs plus Kani harnesses, unsafe-Rust TCB 0.44% vs Asterinas 14%), post-quantum crypto (ML-KEM/ML-DSA/SLH-DSA, KAT-verified against the official NIST ACVP vectors) is demonstrated across every trust surface with no demonstrated classical-only path (operational package signature still Ed25519), and a device mesh, energy broker, interface layer, and PQC-signed package manager complete the stack. **Proven under QEMU — no physical hardware exists yet; a physical-hardware boot, an external third-party audit, and a hardware root of trust are documented open items.** The full milestone history lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
+> **Now:** Anvaya **1.3.6** ("Honest Core/Harness Accounting") is released — the latest step in an RSI (recursive self-improvement) arc running since 1.3.0, where the kernel and its own proof harness are driven through repeated, evidence-gated self-tightening cycles: `main.rs` compressed **76,824 → 470 lines**, the proof harness compressed **55,254 → 239 lines** (v1.3.2) and then grew to a fully-accounted **1,235 lines** as v1.3.6 closed a real measurement gap (four source files reachable from the shipped kernel binary but invisible to the size ratchet were classified and physically relocated — nothing was hidden, the accounting was simply wrong). Every cycle is proven behavior-preserving by a byte-exact, 1,571-marker boot-transcript oracle — zero markers deleted or reworded across the whole arc. Since 1.0.0 the line also shipped a machine-checked manifesto alignment ledger, PQC as the operational default, the first kernel-to-userspace extraction (the energy broker), type-state capability traits (1.1.0), real SMP multi-hart scheduling with priority inheritance, and first-class asynchronous IPC (1.2.0). **Proven under QEMU — no physical hardware exists yet; a physical-hardware boot, an external third-party audit, and a hardware root of trust remain documented open items.** **v1.4.0** ("The Real Launcher" — a real launch syscall, a second nucleus extraction, and a PQC-hybrid package envelope) is scoped and goal-defined, not yet started. The full milestone history lives in the [milestone goal documents](https://github.com/AnvayaOS/anvaya#milestone-goal-documents).
 
 ## ✅ What Works Today
 
 ANVAYA is early — but it is **not vaporware**. The nucleus boots and runs real
 code right now, and every claim below is re-asserted by **repeatable QEMU
-evidence** that CI checks on every push (160+ verified releases and counting):
+evidence** that CI checks on every push (234+ verified releases and counting):
 
 - 🥾 **Boots on RISC-V** in QEMU under OpenSBI (S-mode nucleus, first light)
 - 🔑 **Full RFC 0010 syscall surface** — capabilities, IPC, memory, scheduling, wait/cancel — proof-backed with denial paths
@@ -139,6 +139,10 @@ contains a kernel panic — so a clean run *is* the evidence.
 | **Anvaya 0.8** — Multi-device mesh | PQC pairing, cross-device capabilities, CRDT sync, distributed agents | ✅ **0.8.0 released** |
 | **Anvaya 0.9** — Usable & sustainable | Energy broker (SCI), intent router/CLI/compositor, PQC package manager | ✅ **0.9.0 released** |
 | **Anvaya 1.0** — QEMU-Proven Milestone | Formal verification, threat model + design-time negative tests, PQC demonstrated across surfaces, benchmarks — QEMU-proven, no physical hardware, no external audit | ✅ **1.0.0 released** |
+| **Anvaya 1.1** — North Star Realignment | Machine-checked manifesto alignment ledger, PQC as the operational default, first kernel-to-userspace extraction (energy broker), type-state capability traits | ✅ **1.1.0 released** |
+| **Anvaya 1.2** — Scheduling & IPC to Spec | SMP multi-hart scheduling with work stealing, real-time priority inheritance with measured bounded dispatch latency, first-class asynchronous IPC, multicore soundness (Kani harnesses 7 → 13) | ✅ **1.2.0 released** |
+| **Anvaya 1.3** — RSI arc: self-tightening ratchets | `main.rs` 76,824 → 470 lines, proof harness 55,254 → 239 lines then fully re-accounted to 1,235, byte-exact 1,571-marker boot-transcript oracle, honest core/harness accounting (1.3.0–1.3.6) | ✅ **1.3.6 released** |
+| **Anvaya 1.4** — WASM/WASI Application Runtime ("The Real Launcher") | A real launch syscall (today every WASM app is launched only by the boot-proof harness, never a running process), a second nucleus extraction served through it, a PQC-hybrid package envelope | 🚧 **Goal defined, not started** — [`V1_4_GOAL.md`](https://github.com/AnvayaOS/anvaya/blob/main/V1_4_GOAL.md) |
 
 *Progress is tracked release-by-release with reproducible QEMU evidence — see the [changelog](https://github.com/AnvayaOS/anvaya/blob/main/CHANGELOG.md) and the [live status page](https://anvaya.dev/status).*
 
