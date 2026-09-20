@@ -192,6 +192,6 @@ ANVAYA OS is dual-licensed under [Apache 2.0](https://www.apache.org/licenses/LI
   year         = {2026},
   month        = {jan},
   howpublished = {\url{https://anvaya.dev}},
-  note         = {Published 2026-01-01; Contact: dev@mycel-ai.de; GitHub: https://github.com/alpha912; Accessed 2026-07-11}
+  note         = {Published 2026-01-01; Contact: info@anvaya.dev; GitHub: https://github.com/alpha912; Accessed 2026-07-11}
 }
 ```
