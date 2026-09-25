@@ -17,5 +17,5 @@ Fixes are made against the latest release and the `main` branch.
 
 The project's threat model, trust boundary and honest assurance posture are
 described in the [ANVAYA security policy](https://github.com/AnvayaOS/anvaya/blob/main/SECURITY.md).
-ANVAYA OS is a research release proven under QEMU. It has not been audited by
+AnvayaOS is a research release proven under QEMU. It has not been audited by
 an independent security firm, and no physical-hardware boot is claimed.

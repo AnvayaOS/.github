@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an improvement. Design changes to ANVAYA OS go through an RFC.
+description: Suggest an improvement. Design changes to AnvayaOS go through an RFC.
 labels: ["enhancement"]
 body:
   - type: textarea

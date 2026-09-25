@@ -10,7 +10,7 @@ build dependencies.
 
 ## Policy
 
-Third-party material in ANVAYA OS repositories must be under a licence that is
+Third-party material in AnvayaOS repositories must be under a licence that is
 compatible with distributing the project under Apache-2.0 OR MIT.
 
 - Permissive licences are accepted: MIT, Apache-2.0, BSD, ISC, Zlib,

@@ -5,4 +5,4 @@ contact_links:
     about: Please report vulnerabilities privately by email, never in a public issue.
   - name: Propose a design change
     url: https://github.com/AnvayaOS/rfcs
-    about: Changes to the design of ANVAYA OS go through the RFC process.
+    about: Changes to the design of AnvayaOS go through the RFC process.

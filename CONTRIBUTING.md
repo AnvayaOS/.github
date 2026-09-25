@@ -1,7 +1,7 @@
 # Contributing to AnvayaOS community defaults
 
-Thank you for your interest in ANVAYA OS. This repository contains
-the ANVAYA OS organisation profile and the default community files used by every repository that does not provide its own. It is part of the [AnvayaOS organisation](https://github.com/AnvayaOS).
+Thank you for your interest in AnvayaOS. This repository contains
+the AnvayaOS organisation profile and the default community files used by every repository that does not provide its own. It is part of the [AnvayaOS organisation](https://github.com/AnvayaOS).
 
 ## Code of Conduct
 
@@ -10,7 +10,7 @@ Everyone taking part is expected to follow the
 
 ## Before you start
 
-- For changes to the design of ANVAYA OS, open or discuss an RFC in the
+- For changes to the design of AnvayaOS, open or discuss an RFC in the
   [rfcs repository](https://github.com/AnvayaOS/rfcs) first.
 - Check [anvaya.dev/status](https://anvaya.dev/status) to see what is finished
   and what is not.
@@ -41,7 +41,7 @@ Everyone taking part is expected to follow the
 
 ## Evidence
 
-ANVAYA OS makes no claim it cannot show. If your change affects what the
+AnvayaOS makes no claim it cannot show. If your change affects what the
 project says it can do, include the evidence: a test, a boot marker, or a
 command that reproduces the result. Keep documentation to what is proven.
 
@@ -53,7 +53,7 @@ headings: Added, Changed, Deprecated, Removed, Fixed and Security.
 
 ## Versioning
 
-ANVAYA OS follows [Semantic Versioning 2.0.0](https://semver.org/).
+AnvayaOS follows [Semantic Versioning 2.0.0](https://semver.org/).
 Repositories in the organisation are released together under the nucleus
 release version, for example `v1.7.1`. Release candidates use the `-rc.N`
 suffix, for example `v1.8.0-rc.1`.
