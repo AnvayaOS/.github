@@ -58,6 +58,13 @@ Repositories in the organisation are released together under the nucleus
 release version, for example `v1.7.1`. Release candidates use the `-rc.N`
 suffix, for example `v1.8.0-rc.1`.
 
+## Third-party code
+
+Third-party material must be under a licence compatible with Apache-2.0 OR
+MIT. Record anything you add in [third-party/](third-party/README.md), which
+sets out the accepted licences and what to include, and add any notice its
+licence requires to [NOTICE](NOTICE).
+
 ## Licensing of contributions
 
 By contributing, you agree that your contribution is licensed under the same terms as this repository: Apache-2.0 OR MIT, at the user's option.

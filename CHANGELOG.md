@@ -11,8 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Standard community files: Code of Conduct (Contributor Covenant 3.0),
   contributing guide, security policy, pull request and issue templates.
-- Full licence texts in `LICENSE-APACHE` and `LICENSE-MIT`, with `LICENSE`
+- Full licence texts in `LICENSE-APACHE` and `LICENSE-MIT`, with `COPYRIGHT`
   stating the dual licence (`Apache-2.0 OR MIT`).
+- `NOTICE`, and a `third-party/` directory recording third-party material,
+  its licences and the notices they require.
 - This changelog, following Keep a Changelog and Semantic Versioning.
 
 ### Changed
