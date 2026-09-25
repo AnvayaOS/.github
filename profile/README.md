@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AnvayaOS/.github/main/profile/banner.svg" width="100%" alt="AnvayaOS: The Operating System for the Intelligence Age">
+  <img src="https://raw.githubusercontent.com/AnvayaOS/.github/main/assets/banners/anvayaos.svg" width="100%" alt="AnvayaOS: The Operating System for the Intelligence Age">
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
   <a href="https://anvaya.dev/changelog">Changelog</a>
 </p>
 
-> **Status, v1.7.2 (25 September 2026):** a QEMU-proven research release.
+> **Status:** v1.7.2 (25 September 2026), a QEMU-proven research release.
 > AnvayaOS has not yet booted on physical hardware and has not had an external
 > security audit. The source repositories are private until the first public
 > release.
