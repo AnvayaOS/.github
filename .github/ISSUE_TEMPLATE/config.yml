@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/AnvayaOS/anvaya/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately by email, never in a public issue.
+  - name: Propose a design change
+    url: https://github.com/AnvayaOS/rfcs
+    about: Changes to the design of ANVAYA OS go through the RFC process.
