@@ -14,7 +14,7 @@
   <a href="https://anvaya.dev/changelog">Changelog</a>
 </p>
 
-> **Status:** v1.7.2 (25 September 2026), a QEMU-proven research release.
+> **Status:** v1.8.0 (1 October 2026), a QEMU-proven research release.
 > AnvayaOS has not yet booted on physical hardware and has not had an external
 > security audit. The source repositories are private until the first public
 > release.
@@ -53,7 +53,8 @@ Proven under QEMU by every release's gates:
 - Drivers, storage and networking as signed, isolated user-mode tasks
 - ML-KEM, ML-DSA and SLH-DSA verified against NIST's official test vectors, with hybrid signatures on every package
 - Twelve signed WebAssembly apps running with deny-by-default permissions
-- AI agents with identity, goals, quotas and a hash-chained audit trail
+- Signed userspace Broker/AEC and bounded WASM model execution, with identity, goals, quotas and a recoverable audit trail
+- Shared-runtime capability refinement within the published finite proof domain and wrapper/concurrency assumptions
 
 You can watch the kernel boot in your browser at
 [anvaya.dev/demo](https://anvaya.dev/demo). It finishes at an interactive shell.
@@ -69,8 +70,8 @@ You can watch the kernel boot in your browser at
 | 1.6 | Content-addressed storage service | Released |
 | 1.7 | Capability sockets and network service | Released |
 | 1.7.2 | Audit repairs and native intelligence (25 September 2026) | Released |
-| 1.8 | Intelligence and verification maturation | In progress |
-| Next | First boot on physical RISC-V hardware | Planned |
+| 1.8.0 | Intelligence and verification maturation (1 October 2026) | Released |
+| 1.9 | Scale extensions and HAL; physical FML13V01 acceptance | Planned; board unavailable |
 
 Every milestone and its evidence is on the [status page](https://anvaya.dev/status).
 

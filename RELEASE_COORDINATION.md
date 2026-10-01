@@ -1,16 +1,18 @@
 # v1.8 coordinated release
 
-Status on 2026-10-01: **candidate; validation and publication pending**.
-The current stable kernel release remains v1.7.2.
+Status on 2026-10-01: **v1.8.0 coordinated release source**.
+Kernel source: `c86a48f87b2d882adfbe9a70c0783576a6af2b11` at [v1.8.0](https://github.com/AnvayaOS/anvaya/tree/v1.8.0).
 
 Organization profile: report the completed milestone and exact evidence links after acceptance.
 
 The complete kernel acceptance contract is V1_8_GOAL.md and
 evidence/V1_8_CLOSURE.md in the sibling anvaya repository.
-All seven required behaviors and Gates A-F remain required. Baseline results
-retain their original v1.7.2 identity; the new v1.8.0 proof fingerprint requires
-a complete current-source rerun, five completed local groups, exact artifacts,
-portable checksums and all-nine repository BUILDINFO provenance.
+All seven required behaviors and Gates A-F remain required. The five
+complete local gate records are bound to the kernel source above; the
+formal group validates the complete 135-harness model union and pinned
+Verus/Lean tracks. Historical v1.7.2 records retain their original identity.
+Release packaging additionally binds exact artifacts, portable checksums
+and all-nine repository BUILDINFO provenance.
 
 Do not label this coordinated milestone released until the exact-source gates,
 packaging, repository tags/main provenance, site proof/truth checks, deployment
