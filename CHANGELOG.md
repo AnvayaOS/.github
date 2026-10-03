@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pin the Lean proof-build maintenance source and complete local acceptance
   requirements; retain this repository's independent component maturity.
 - Record the self-contained ACVP preparation and unchanged theorem/model scope.
+- Record constant-space ISA admission with denial controls and the selected
+  aggregate resource-budget enforcement; all acceptance limits remain intact.
 - Defer v1.9 with its source and evidence preserved; physical-board acceptance
   and external audit remain pending. See RELEASE_COORDINATION.md.
 
