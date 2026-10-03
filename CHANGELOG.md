@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.1]
+
+### Maintenance coordination
+
+- Pin the Lean proof-build maintenance source and complete local acceptance
+  requirements; retain this repository's independent component maturity.
+- Record the self-contained ACVP preparation and unchanged theorem/model scope.
+- Defer v1.9 with its source and evidence preserved; physical-board acceptance
+  and external audit remain pending. See RELEASE_COORDINATION.md.
+
+
 ### Added
 
 - Standard community files: Code of Conduct (Contributor Covenant 3.0),

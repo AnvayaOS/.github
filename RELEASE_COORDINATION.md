@@ -1,3 +1,32 @@
+# v1.8.1 coordinated maintenance release
+
+Kernel source: `1e9ec86bdc62c3c3b64759e95b5cef6f4a0b08aa` on the v1.8.1 maintenance release line.
+The [maintenance acceptance contract](https://github.com/AnvayaOS/anvaya/blob/v1.8.1/evidence/V1_8_1_CLOSURE.md)
+retains all seven v1.8 requirements and all five complete local groups.
+
+The patch makes the pinned Lean transport library build explicit and requires
+all three compiled modules. Seven proof bodies are repaired; the thirteen
+theorem statements and the model are unchanged. The QEMU/workspace group
+fetches its eight pinned NIST ACVP inputs before its original 23 steps.
+No new runtime feature or v1.9 scale/HAL feature is included.
+
+Version changes require fresh complete 135-harness model verification, Verus
+36 obligations and four negative controls, other Kani tracks, Lean, native
+six-boot/four-cut recovery, QEMU, PQC, accounting and claims. All execution is
+local, guarded, single-job and zero-swap; no GitHub Actions are authorized.
+Release completion requires exact package and uploaded digests, all-nine
+source/tag provenance, portable image identities, healthy deployment, rendered
+truth and public QEMU boot/shell/help. Publication receipts determine acceptance.
+
+v1.9 work is deferred at the user's request, with source and evidence preserved.
+No board is available. Physical acceptance and external audit remain pending;
+M1/M6/M8 remain PARTIAL, transport=service-loopback, polling=0 and
+kernel_fallbacks=0 retain their existing scope. This repository's independent
+component maturity and RFC acceptance statuses do not advance through release
+coordination alone.
+
+## Historical v1.8.0 coordination
+
 # v1.8 coordinated release
 
 Status on 2026-10-01: **v1.8.0 coordinated release source**.

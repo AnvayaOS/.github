@@ -14,7 +14,7 @@
   <a href="https://anvaya.dev/changelog">Changelog</a>
 </p>
 
-> **Status:** v1.8.0 (1 October 2026), a QEMU-proven research release.
+> **Release line:** v1.8.1, Lean proof-build maintenance of the QEMU research release.
 > AnvayaOS has not yet booted on physical hardware and has not had an external
 > security audit. The source repositories are private until the first public
 > release.
@@ -71,7 +71,8 @@ You can watch the kernel boot in your browser at
 | 1.7 | Capability sockets and network service | Released |
 | 1.7.2 | Audit repairs and native intelligence (25 September 2026) | Released |
 | 1.8.0 | Intelligence and verification maturation (1 October 2026) | Released |
-| 1.9 | Scale extensions and HAL; physical FML13V01 acceptance | Planned; board unavailable |
+| 1.8.1 | Lean proof-build maintenance and self-contained local gates | Exact-source release receipts required |
+| 1.9 | Scale extensions and HAL; physical FML13V01 acceptance | Deferred; board unavailable |
 
 Every milestone and its evidence is on the [status page](https://anvaya.dev/status).
 
@@ -120,3 +121,11 @@ at your option.
   note         = {Contact: info@anvaya.dev; GitHub: https://github.com/AnvayaOS}
 }
 ```
+
+
+## Current release coordination
+
+This repository follows the **v1.8.1 maintenance line**; [exact source, scope and
+acceptance requirements](../RELEASE_COORDINATION.md) are recorded separately from its component
+maturity. v1.9 development is deferred. Physical-board acceptance and external
+audit remain pending.
