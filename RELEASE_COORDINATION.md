@@ -1,6 +1,6 @@
 # v1.8.1 coordinated maintenance release
 
-Kernel source: `a5aa12bd214da4a6fe811125de530dd702bf27bc` on the v1.8.1 maintenance release line.
+Kernel source: `89e12beb5f39dafae01c22b45625f9301694cdc7` on the v1.8.1 maintenance release line.
 The [maintenance acceptance contract](https://github.com/AnvayaOS/anvaya/blob/v1.8.1/evidence/V1_8_1_CLOSURE.md)
 retains all seven v1.8 requirements and all five complete local groups.
 
