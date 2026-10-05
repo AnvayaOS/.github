@@ -1,6 +1,6 @@
 # v1.8.1 coordinated maintenance release
 
-Kernel source: `6d9aad47c992633260e25f8128807720c0f08463` on the v1.8.1 maintenance release line.
+Kernel source: `704289deb69ba83edc2675f134890b6febe6b3d0` on the v1.8.1 maintenance release line.
 The [maintenance acceptance contract](https://github.com/AnvayaOS/anvaya/blob/v1.8.1/evidence/V1_8_1_CLOSURE.md)
 retains all seven v1.8 requirements and all five complete local groups.
 
@@ -8,13 +8,21 @@ The patch makes the pinned Lean transport library build explicit and requires
 all three compiled modules. Seven proof bodies are repaired; the thirteen
 theorem statements and the model are unchanged. The QEMU/workspace group
 fetches its eight pinned NIST ACVP inputs before its original 23 steps.
-No new runtime feature or v1.9 scale/HAL feature is included.
+No v1.9 scale/HAL feature or full SHAKTI kernel target is included.
 
 CPU ISA admission retains the unchanged predicate result without storing the
 firmware description in a fixed property buffer. Long-description admission
 and missing-extension, wrong-width and other-field-limit denials are retained.
 The resource guard applies the selected 8 GiB cap to both job and aggregate,
 with zero swap, one job and the startup reserve unchanged.
+
+The source includes a software-only SHAKTI SBI handoff/serial diagnostic,
+low-frequency timer conversion with ceiling rounding and final saturation,
+and a separate explicitly authorized hardware-validation lane. Existing release
+job/aggregate limits remain unchanged. No SHAKTI MMIO backend, complete kernel
+target, physical boot or security acceptance is established. Private vendor DTS
+and correspondence are excluded. The final merged source requires fresh complete
+release validation; earlier-source results retain only their original provenance.
 
 Version changes require fresh complete 135-harness model verification, Verus
 36 obligations and four negative controls, other Kani tracks, Lean, native
