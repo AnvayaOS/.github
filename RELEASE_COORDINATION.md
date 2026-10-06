@@ -1,3 +1,34 @@
+# v1.8.2 coordinated patch release — SHAKTI boot readiness
+
+Kernel: [v1.8.2](https://github.com/AnvayaOS/anvaya/tree/v1.8.2), release source
+`26d17f0e028d3e9a89fc83752a1678fce60f4fd8` (nucleus 1.8.2); the tag adds only
+documentation: the gate evidence and the
+[closure record](https://github.com/AnvayaOS/anvaya/blob/v1.8.2/evidence/V1_8_2_CLOSURE.md).
+
+v1.8.2 adds a third kernel target, `shakti-cclass`, for a SHAKTI C-class
+bitstream on a Digilent Arty A7-100T. On QEMU `shakti_c` it reaches first light
+under OpenSBI v1.7 and, under Anvaya's Rust machine-mode resident monitor, runs
+the signed `hello-status` app and fires the PMP-gated escape from machine mode.
+A private loading kit is prepared for IIT Madras outside the repositories.
+SHAKTI is Buildable; no physical boot is claimed, and the private vendor device
+tree is published only as its SHA-256.
+
+By the owner's amendment in V1_8_2_GOAL.md, v1.8.2 is proven by both QEMU
+`shakti_c` lanes, the three-feature build matrix, nucleus unit and DTB tests,
+fmt and clippy on the touched crates, the unchanged qemu-virt boot regression
+and the docs and claims checkers. The multi-day formal capture is not re-run
+and no new formal result is claimed. anvaya.dev and the live demo stay on
+v1.8.1; nothing is deployed for this patch. All work is local and every commit
+carries `[skip ci]`; no GitHub Actions run.
+
+Organization profile: unchanged by this patch; report SHAKTI only as Buildable.
+
+v1.9 stays deferred. FML13V01 and SHAKTI physical acceptance and the external
+audit remain pending; M1/M6/M8 remain PARTIAL, and this repository's
+independent maturity and RFC statuses do not advance through coordination.
+
+## Historical v1.8.1 coordination
+
 # v1.8.1 coordinated maintenance release
 
 Kernel source: `104deaa9c6912646f5526e35d78b6f743d95c2a9` on the v1.8.1 maintenance release line.
