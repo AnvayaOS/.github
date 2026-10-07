@@ -1,3 +1,30 @@
+# v1.8.3 coordinated patch release — interrupt-delivery repair
+
+Kernel: [v1.8.3](https://github.com/AnvayaOS/anvaya/tree/v1.8.3), release source
+`d8f2dab460173db4f9c33fe3194e3394e7adeac5` (nucleus 1.8.3), which is also the
+tag's commit; the
+[acceptance contract](https://github.com/AnvayaOS/anvaya/blob/v1.8.3/evidence/V1_8_3_CLOSURE.md)
+binds its records.
+
+v1.8.3 fixes the intermittent qemu-virt boot hang present since before v1.8.2:
+a device interrupt taken while a client or service runs in user mode is now
+claimed through the bare kernel map, fatal reports print through it, and a
+restarted driver binding drains the PLIC source its predecessor left latched.
+The SHAKTI kit packs Kit A as `anvaya-nucleus-shakti.bin`. The v1.8.2 owner
+amendment does not apply: v1.8.3 requires the complete five-group local
+release capture at its tag, including both SHAKTI `shakti_c` lanes and the
+135-harness model union, then packages, nine coordinated releases and the
+anvaya.dev deployment with a real public QEMU session. All work is local and
+every commit carries `[skip ci]`; no GitHub Actions run.
+
+Documentation: unchanged; the fix and its evidence live in the core repository.
+
+v1.9 stays deferred. FML13V01 and SHAKTI physical acceptance and the external
+audit remain pending; M1/M6/M8 remain PARTIAL, and this repository's
+independent maturity and RFC statuses do not advance through coordination.
+
+## Historical v1.8.2 coordination
+
 # v1.8.2 coordinated patch release — SHAKTI boot readiness
 
 Kernel: [v1.8.2](https://github.com/AnvayaOS/anvaya/tree/v1.8.2), release source
