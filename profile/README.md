@@ -109,10 +109,12 @@ technical writers.
 
 ## License
 
-AnvayaOS is licensed under either of the
+The AnvayaOS source is private while it matures. It will be published under
+either the
 [Apache License, Version 2.0](https://github.com/AnvayaOS/.github/blob/main/LICENSE-APACHE)
 or the [MIT License](https://github.com/AnvayaOS/.github/blob/main/LICENSE-MIT),
-at your option.
+at your option, once it is mature enough. Release evidence is public now at
+[anvaya.dev](https://anvaya.dev/status).
 
 ## Citation
 
