@@ -1,3 +1,30 @@
+# v1.8.4 coordinated patch release — SHAKTI C-class family kit
+
+Kernel: v1.8.4, release source `ab847a10678da63fccaae6f54c9a645d2e405af0` (nucleus 1.8.4), which is also the
+tag's commit; its acceptance contract is `evidence/V1_8_4_CLOSURE.md` in the
+core repository.
+
+v1.8.4 makes the `shakti-cclass` target admit SHAKTI C-class firmware trees
+that name the board differently from the reference tree, pinned to the C-class
+PLIC, CLINT and console addresses; copies a device tree handed over inside
+firmware memory with fault-checked loads; clips an over-declared RAM size to
+the board's 256 MiB; measures the timer against the cycle counter; adds a
+`/chosen` stopwatch; and builds every SHAKTI image for `rv64imac`. A QEMU
+replica of that firmware layout joins the proof group. v1.8.4 requires the
+complete five-group local release capture at its tag, with `qemu-smoke` grown
+to 29 steps, then packages, nine coordinated releases and the anvaya.dev
+deployment with a real public QEMU session. All work is local and every commit
+carries `[skip ci]`; no GitHub Actions run.
+
+Documentation: unchanged in this repository; the change and its evidence live
+in the core repository. SHAKTI stays Buildable with no physical boot claimed.
+
+v1.9 stays deferred. FML13V01 and SHAKTI physical acceptance and the external
+audit remain pending; M1/M6/M8 remain PARTIAL, and this repository's
+independent maturity and RFC statuses do not advance through coordination.
+
+## Historical v1.8.3 coordination
+
 # v1.8.3 coordinated patch release — interrupt-delivery repair
 
 Kernel: [v1.8.3](https://github.com/AnvayaOS/anvaya/tree/v1.8.3), release source
