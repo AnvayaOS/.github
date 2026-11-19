@@ -131,7 +131,4 @@ at your option, once it is mature enough. Release evidence is public now at
 
 ## Current release coordination
 
-This repository follows the **v1.8.4 patch line** on the v1.8.1 maintenance
-release; [exact source, scope and acceptance requirements](../RELEASE_COORDINATION.md)
-are recorded separately from its component maturity. v1.9 development is deferred. Physical-board acceptance and external
-audit remain pending.
+This repository follows the **v1.8.6 release line**. The [coordination record](../RELEASE_COORDINATION.md) identifies the exact core source and acceptance requirements. Physical-board acceptance and external audit remain pending.
