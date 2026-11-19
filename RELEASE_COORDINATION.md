@@ -1,8 +1,8 @@
 # v1.8.6 coordinated release
 
-Core candidate `8d0ad59c72bb79ad27ae8d8abbfde863670ee8fd` adds the QEMU board models, a ramfb desktop with an on-screen shell, WASM app windows and preemptible resident services. The FML13V01 model runs the desktop, and the SHAKTI model runs headless services. Virtio-gpu is deferred.
+Core candidate `e85538251c7614bc013affc21ac6f32e6da6c2c6` adds the QEMU board models, a ramfb desktop with an on-screen shell, WASM app windows and preemptible resident services. The FML13V01 model runs the desktop, and the SHAKTI model runs headless services. Virtio-gpu is deferred.
 
-The [core acceptance contract](https://github.com/AnvayaOS/anvaya/blob/8d0ad59c72bb79ad27ae8d8abbfde863670ee8fd/evidence/V1_8_6_CLOSURE.md) requires five exact-source local groups, the full model inventory, signed assets and a coordinated deployment of the site and demo. DC-ROMA FML13V01 and SHAKTI C-class retain Buildable status. Physical-board acceptance and external audit remain pending.
+The [core acceptance contract](https://github.com/AnvayaOS/anvaya/blob/e85538251c7614bc013affc21ac6f32e6da6c2c6/evidence/V1_8_6_CLOSURE.md) requires five exact-source local groups, the full model inventory, signed assets and a coordinated deployment of the site and demo. DC-ROMA FML13V01 and SHAKTI C-class retain Buildable status. Physical-board acceptance and external audit remain pending.
 
 ## Historical coordination
 
